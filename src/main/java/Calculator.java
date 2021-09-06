@@ -8,7 +8,8 @@ public class Calculator {
         int sum = 0;
         String result;
 
-        // обработка ошибки ввода более 3-х операндов и только одного типа счисления
+        // обработка ошибки ввода не 2-х операндов и оператора,
+        // только одного типа счисления
         if(words.length != 3 || isNumeric(words[0]) ^ isNumeric(words[2])) {
             try {
                 throw new IOException();
